@@ -12,7 +12,7 @@
   <article class="main-article">
     <section>First sibling
       <ul>
-        <li>First sibling -> A</li>
+        <li class="firstli">First sibling -> A</li>
         <li>First sibling -> B</li>
         <li>First sibling -> C</li>
         <li>First sibling -> D</li>
@@ -26,7 +26,7 @@
     </section>
     <section>Third sibling
       <ul>
-        <li>Third sibling -> A</li>
+        <li class="firstli">Third sibling -> A</li>
         <li>Third sibling -> B</li>
         <li>Third sibling -> C</li>
         <li>Third sibling -> D</li>
@@ -35,13 +35,13 @@
     <section>Fourth sibling</section>
   </article>
 
-  <div>
+  <div class="floatRight">
     I should be on the right side of the screen
   </div>
-  <div>
+  <div class="floatLeft">
     I should be on the left side of the screen
   </div>
-  <div>
+  <div class="clear">
     I should render below my two siblings
   </div>
 
@@ -51,5 +51,7 @@
 
   <script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="javascripts/main.js"></script>
+  <script src="javascripts/IIFE.js"></script>
+  <script src="javascripts/AugmentedIIFE.js"></script>
 </body>
 </html>

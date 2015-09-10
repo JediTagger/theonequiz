@@ -1,0 +1,27 @@
+li {
+  display: inline;
+}
+
+section:nth-child(2n+1) {
+  border: 2px solid black;
+}
+
+li:nth-child(2n+0) {
+  background-color: lime;
+}
+
+aside:first-child {
+  color: blue;
+}
+
+.floatRight {
+  float: right;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
