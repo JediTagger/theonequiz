@@ -28,10 +28,18 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
+  Hoisting is when javascript declares all the variables within a function at the begining of a function no matter where they are defined within the function.
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
-  **Student answer: **
+  A callback is a function called within another function.  One might use this to simply call another function or to create closure.  
+  
+  (all readme answers look right in edit but just one line when saved)
+  
+  function(arg1) {
+    var cannotChange = 1;
+    function() {
+      return arg1 + cannotChange;
+  }
 
 ## Functions and operators
 
@@ -60,19 +68,26 @@ http-server
 
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
 1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
-  **Student answer:**
+  GET, POST, PUT, DELETE
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
-  **Student answer:**
+  Because asynchronous calls aren't answered immediately.  This would cause problems with later code that depends on the information returned from the call.  The promise holds the place of the information that is going to be returned via the call so the code can continue to run and the data is populated where it's needed when the call is completed.
 
 1. Provide a simple example of the syntax for handling a Promise.
-  **Student answer:**
+    
+    PromiseResolves()      
+    .then(function(data) {
+      console.log("Success!", data);
+    })
+    .catch(function(error) {
+      console.log("error", error);
+    });
 
 ## Scope and this
 
 What gets logged to the console when the following code executes? Explain why.
 
-**Student answer: **
+42, because the steve() call site is global.
 
 ```
 var answer = "42";
