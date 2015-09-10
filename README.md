@@ -33,13 +33,13 @@ http-server
 
   A callback is a function called within another function.  One might use this to simply call another function or to create closure.  
   
+  (all readme answers look right in edit but just one line when saved)
+  
   function(arg1) {
     var cannotChange = 1;
     function() {
       return arg1 + cannotChange;
   }
-  
-  (this looks right in edit but just one line when saved)
 
 ## Functions and operators
 
@@ -87,7 +87,7 @@ http-server
 
 What gets logged to the console when the following code executes? Explain why.
 
-42.  Because the steve() call site is global.
+42, because the steve() call site is global.
 
 ```
 var answer = "42";
